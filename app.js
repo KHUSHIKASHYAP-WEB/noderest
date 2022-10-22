@@ -294,7 +294,7 @@ app.delete("/deleteOrder/:id", (req, res) => {
 //connection with mongo
 MongoClient.connect(mongoUrl, (err, client) => {
   if (err) console.log("Error while connecting");
-  db = client.db("category");
+  db = client.db("Category");
   app.listen(port, () => {
     console.log(`Listening to port ${port}`);
   });
