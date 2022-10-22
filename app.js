@@ -14,7 +14,8 @@ let port = process.env.PORT || 9800;
 let cors = require("cors");
 let mongo = require("mongodb");
 let MongoClient = mongo.MongoClient;
-let mongoUrl = process.env.MONGOLOCAL;
+let mongoUrl =
+  "mongodb+srv://khushi:khushi123@cluster0.ecekqwi.mongodb.net/category?retryWrites=true&w=majority";
 //to achieve the functionality of the post api then only we will be able to use the body
 let bodyParser = require("body-parser");
 let db;
